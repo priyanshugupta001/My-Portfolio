@@ -1,22 +1,21 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import logo from "../../assets/sLogo.png";
+import { Container, Row } from "react-bootstrap";
+
 
 const Footer = () => {
-    let date = new Date();
-    let year = date.getFullYear();
+
+
+  const footerStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  }
     return (
       <Container fluid className="footer">
         <Row>
-          <Col md="4" className="footer-copywright">
+          <div className="footer footer-copywright" style={footerStyle}>
             <span>Dedicated to creating impactful solutions!</span>
-          </Col>
+          </div>  
         </Row>
       </Container>
     );  
